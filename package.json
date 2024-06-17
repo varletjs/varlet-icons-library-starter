@@ -26,10 +26,10 @@
       "require": "./svg-cjs/index.cjs",
       "types": "./svg-types/index.d.ts"
     },
-    "./svg-fonts/i-icons-webfont.ttf": "./svg-fonts/i-icons-webfont.ttf",
-    "./css/i-icons.css": "./css/i-icons.css",
-    "./css/i-icons.less": "./css/i-icons.less",
-    "./css/i-icons.scss": "./css/i-icons.scss"
+    "./svg-fonts/fonts/i-icons-webfont.ttf": "./svg-fonts/fonts/i-icons-webfont.ttf",
+    "./svg-fonts/css/i-icons.css": "./svg-fonts/css/i-icons.css",
+    "./svg-fonts/css/i-icons.less": "./svg-fonts/css/i-icons.less",
+    "./svg-fonts/css/i-icons.scss": "./svg-fonts/css/i-icons.scss"
   },
   "license": "MIT",
   "scripts": {
