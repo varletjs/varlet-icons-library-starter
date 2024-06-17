@@ -8,3 +8,4 @@ svg-components
 svg-site
 auto-imports.d.ts
 components.d.ts
+.DS_Store
