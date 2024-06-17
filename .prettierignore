@@ -1,0 +1,14 @@
+svg-cjs
+svg-esm
+svg-fonts
+svg-types
+svg-components
+svg-site
+node_modules
+.npmrc
+*-lock.yaml
+.vscode
+auto-imports.d.ts
+components.d.ts
+README.zh-CN.md
+README.md

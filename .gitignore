@@ -1,0 +1,10 @@
+node_modules
+.vscode
+svg-cjs
+svg-esm
+svg-fonts
+svg-types
+svg-components
+svg-site
+auto-imports.d.ts
+components.d.ts
