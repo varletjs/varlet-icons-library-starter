@@ -1,15 +1,37 @@
 {
-  "name": "varlet-icons-library-starter",
+  "name": "@varlet/icons-library-starter",
   "version": "0.0.0",
   "type": "module",
-  "description": "",
-  "keywords": [],
+  "description": "A icons library starter",
+  "keywords": [
+    "svg",
+    "icons",
+    "library",
+    "starter",
+    "vue"
+  ],
   "author": "haoziqaq <357229046@qq.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/varletjs/varlet-icons-library-starter.git"
+  "sideEffects": [
+    "css/*.css",
+    "css/*.less",
+    "css/*.scss",
+    "fonts/*.ttf"
+  ],
+  "main": "svg-cjs/index.cjs",
+  "module": "svg-esm/index.js",
+  "types": "svg-types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./svg-esm/index.js",
+      "require": "./svg-cjs/index.cjs",
+      "types": "./svg-types/index.d.ts"
+    },
+    "./fonts": "./svg-fonts/i-icons-webfont.ttf",
+    "./css": "./css/i-icons.css",
+    "./less": "./css/i-icons.less",
+    "./scss": "./css/i-icons.scss"
   },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,7 +41,18 @@
     "icons:generate": "vi generate",
     "icons:figma": "vi figma",
     "format": "prettier --write .",
+    "release": "pnpm icons && vr release",
     "bump": "pnpm update @varlet/* --latest"
+  },
+  "files": [
+    "svg-cjs",
+    "svg-esm",
+    "svg-fonts",
+    "svg-types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varletjs/varlet-icons-library-starter.git"
   },
   "bugs": {
     "url": "https://github.com/varletjs/varlet-icons-library-starter/issues"
