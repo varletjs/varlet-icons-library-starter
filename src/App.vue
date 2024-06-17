@@ -44,8 +44,9 @@ function handleClick(value: string, { name, icon }: { name: string; icon: string
     safe-area-top
     fixed
     placeholder
-    :elevation="false"
     title-position="center"
+    :z-index="1000"
+    :elevation="false"
   >
     <div class="flex flex-col justify-center h-66px">
       <div class="flex items-center gap-20px">
