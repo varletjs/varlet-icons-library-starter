@@ -12,10 +12,10 @@
   ],
   "author": "haoziqaq <357229046@qq.com>",
   "sideEffects": [
-    "css/*.css",
-    "css/*.less",
-    "css/*.scss",
-    "fonts/*.ttf"
+    "svg-fonts/css/*.css",
+    "svg-fonts/css/*.less",
+    "svg-fonts/css/*.scss",
+    "svg-fonts/fonts/*.ttf"
   ],
   "main": "svg-cjs/index.cjs",
   "module": "svg-esm/index.js",
