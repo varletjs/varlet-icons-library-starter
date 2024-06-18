@@ -1,3 +1,7 @@
+## [0.0.7](https://github.com/varletjs/varlet-icons-library-starter/compare/v0.0.6...v0.0.7) (2024-06-18)
+
+
+
 ## [0.0.6](https://github.com/varletjs/varlet-icons-library-starter/compare/v0.0.5...v0.0.6) (2024-06-18)
 
 
