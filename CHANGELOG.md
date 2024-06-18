@@ -1,3 +1,13 @@
+## [0.0.5](https://github.com/varletjs/varlet-icons-library-starter/compare/v0.0.4...v0.0.5) (2024-06-18)
+
+
+### Bug Fixes
+
+* optimize ui ([57584bf](https://github.com/varletjs/varlet-icons-library-starter/commit/57584bf5847844c30d3bee5943f2280524b7a460))
+* set app bar z-index ([0f60301](https://github.com/varletjs/varlet-icons-library-starter/commit/0f603014398a63b090e86f81fdba7a5886f4df79))
+
+
+
 ## [0.0.4](https://github.com/varletjs/varlet-icons-library-starter/compare/v0.0.3...v0.0.4) (2024-06-17)
 
 
