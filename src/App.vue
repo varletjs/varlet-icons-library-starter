@@ -58,7 +58,7 @@ function handleClick(value: string, { name, icon }: { name: string; icon: string
     </div>
   </var-app-bar>
 
-  <div class="container flex flex-col items-center m-auto py-30px">
+  <div class="container flex flex-col items-center m-auto pt-26px pb-36px">
     <div class="flex justify-center flex-wrap gap-16px">
       <var-menu-select
         placement="cover-top-end"
