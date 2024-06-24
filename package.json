@@ -58,21 +58,21 @@
     "url": "https://github.com/varletjs/varlet-icons-library-starter/issues"
   },
   "dependencies": {
-    "@varlet/shared": "^3.3.1",
-    "@varlet/touch-emulator": "^3.3.1",
-    "@varlet/ui": "^3.3.1",
+    "@varlet/shared": "^3.3.2",
+    "@varlet/touch-emulator": "^3.3.2",
+    "@varlet/ui": "^3.3.2",
     "@vueuse/core": "^10.7.2",
     "vue": "^3.4.29"
   },
   "devDependencies": {
-    "@varlet/icon-builder": "0.4.0-alpha.1719230574564",
-    "@varlet/import-resolver": "^3.3.1",
-    "@varlet/preset-unocss": "^3.3.1",
-    "@varlet/release": "^0.2.10",
     "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "@unocss/preset-rem-to-px": "^0.61.0",
+    "@varlet/icon-builder": "0.3.5",
+    "@varlet/import-resolver": "^3.3.2",
+    "@varlet/preset-unocss": "^3.3.2",
+    "@varlet/release": "^0.2.10",
     "@vitejs/plugin-vue": "^5.0.5",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",

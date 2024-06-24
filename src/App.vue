@@ -40,9 +40,10 @@ function handleClick(value: string, { name, icon }: { name: string; icon: string
 
 <template>
   <var-app-bar
-    class="flex flex-col justify-center b-t-none b-l-none b-r-none b-b b-solid b-[var(--color-outline)]"
+    class="flex flex-col justify-center b-[var(--color-outline)]"
     safe-area-top
     fixed
+    border
     placeholder
     title-position="center"
     :z-index="1000"
@@ -58,13 +59,13 @@ function handleClick(value: string, { name, icon }: { name: string; icon: string
     </div>
   </var-app-bar>
 
-  <div class="container flex flex-col items-center m-auto pt-26px pb-36px">
-    <div class="flex justify-center flex-wrap gap-16px">
+  <div class="px-20px flex flex-col items-center m-auto pt-26px pb-36px">
+    <div class="flex justify-center flex-wrap gap-20px" v-if="searchedIcons.length">
       <var-menu-select
         placement="cover-top-end"
         v-for="icon in searchedIcons"
         :key="icon"
-        @update:model-value="(value) => handleClick(value, icon)"
+        @update:model-value="(value: string) => handleClick(value, icon)"
       >
         <var-paper
           :elevation="1"
@@ -81,6 +82,8 @@ function handleClick(value: string, { name, icon }: { name: string; icon: string
         </template>
       </var-menu-select>
     </div>
+
+    <var-result class="bg-transparent" type="info" title="Ops~" description="Nothing found" v-else />
   </div>
 </template>
 
