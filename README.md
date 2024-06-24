@@ -1,3 +1,6 @@
+<span>English</span> |
+<a href="https://github.com/varletjs/varlet-icons-library-starter/blob/main/README.zh-CN.md">中文</a>
+
 ### Intro
 
 A starter template for building an icon library.

@@ -1,3 +1,6 @@
+<a href="https://github.com/varletjs/varlet-icons-library-starter/blob/main/README.md">English</a> |
+<span>中文</span>
+
 ### 介绍
 
 一个构建图标库的启动模板。
