@@ -50,7 +50,7 @@ function handleClick(value: string, { name, icon }: { name: string; icon: string
   >
     <div class="flex flex-col justify-center h-66px">
       <div class="flex items-center gap-20px">
-        <var-input class="w-300px" size="small" variant="outlined" placeholder="Search..." v-model="search" />
+        <var-input class="w-300px" size="small" variant="outlined" placeholder="Search..." clearable v-model="search" />
         <var-button icon-container round @click="toggleDark">
           <var-icon name="palette" />
         </var-button>
