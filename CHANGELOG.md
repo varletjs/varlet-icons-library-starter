@@ -1,3 +1,12 @@
+## [0.0.8](https://github.com/varletjs/varlet-icons-library-starter/compare/v0.0.7...v0.0.8) (2024-06-25)
+
+
+### Features
+
+* support clearable for search ([9cb5fbb](https://github.com/varletjs/varlet-icons-library-starter/commit/9cb5fbb34a3277cc104971e8382f8ff7bde6c72b))
+
+
+
 ## [0.0.7](https://github.com/varletjs/varlet-icons-library-starter/compare/v0.0.6...v0.0.7) (2024-06-18)
 
 
