@@ -17,6 +17,25 @@ A starter template for building an icon library.
 
 https://varletjs.github.io/varlet-icons-library-starter
 
+### Framework Support
+
+We support Vue3 and React, and compile components to Vue3 by default.
+If you want to generate React components, refer to the following configuration.
+
+```diff
+// vi.config.ts
+import { defineConfig } from '@varlet/icon-builder'
+
+export default defineConfig({
+  name: 'i-icons',
+  namespace: 'i',
+  output: './svg-fonts'
++ generate: {
++   framework: 'react'
++ }  
+})
+```
+
 ### Icons Usage
 
 #### Web font icons

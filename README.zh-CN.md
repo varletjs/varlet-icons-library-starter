@@ -17,6 +17,24 @@
 
 https://varletjs.github.io/varlet-icons-library-starter
 
+### 框架支持
+
+我们支持 Vue3 和 React，默认将组件编译为 Vue3。如果要生成 React 组件，请参考以下配置。
+
+```diff
+// vi.config.ts
+import { defineConfig } from '@varlet/icon-builder'
+
+export default defineConfig({
+  name: 'i-icons',
+  namespace: 'i',
+  output: './svg-fonts'
++ generate: {
++   framework: 'react'
++ }  
+})
+```
+
 ### 图标使用
 
 #### 字体图标
