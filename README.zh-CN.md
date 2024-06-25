@@ -17,6 +17,55 @@
 
 https://varletjs.github.io/varlet-icons-library-starter
 
+### 图标使用
+
+#### 字体图标
+
+```js
+import '<packageName>/svg-fonts/css/i-icons.css'
+```
+
+```html
+<i class="i i-account-circle-outline"></i>
+<i class="i i-account-circle-outline" style="color: red; font-size: 30px"></i>
+```
+
+#### Vue 组件
+
+```html
+<script setup>
+import { XIcon, AccountCircleOutline } from '<packageName>'
+</script>
+
+<template>
+  <x-icon>
+    <account-circle-outline />
+  </x-icon>
+   
+  <x-icon color="red" :size="30">
+    <account-circle-outline />
+  </x-icon>
+</template>
+```
+
+#### React 组件
+
+```jsx
+import { XIcon, AccountCircleOutline } from '<packageName>'
+
+function Demo() {
+  return <>
+    <XIcon>
+      <AccountCircleOutline />
+    </XIcon>
+   
+    <XIcon color="red" size={30}>
+      <AccountCircleOutline />
+    </XIcon>
+  </>
+}
+```
+
 ### 核心命令
 
 #### 启动图标预览站点开发环境

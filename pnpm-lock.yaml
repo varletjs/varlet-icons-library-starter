@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^0.61.0
     version: 0.61.0
   '@varlet/icon-builder':
-    specifier: 0.4.0-alpha.1719337187637
-    version: 0.4.0-alpha.1719337187637(vue@3.4.29)
+    specifier: 0.4.0
+    version: 0.4.0(vue@3.4.29)
   '@varlet/import-resolver':
     specifier: ^3.3.2
     version: 3.3.2
@@ -95,6 +95,10 @@ packages:
     dependencies:
       execa: 5.1.1
       find-up: 5.0.0
+    dev: true
+
+  /@antfu/utils@0.7.10:
+    resolution: {integrity: sha512-+562v9k4aI80m1+VuMHehNJWLOFjBnXn3tdOitzD0il5b7smkSBal4+a3oKiQTbrwMmN/TBUMDvbdoWDehgOww==}
     dev: true
 
   /@antfu/utils@0.7.8:
@@ -1353,8 +1357,8 @@ packages:
       - debug
     dev: true
 
-  /@varlet/icon-builder@0.4.0-alpha.1719337187637(vue@3.4.29):
-    resolution: {integrity: sha512-/j7g2rr8ygOPdrf2hryJwNj87Ab6FOyJrV4S2U6J9ZFhmmz+xngLWAqEeM9fHSToPB3xKDLH6exlNN+AKAUCYg==}
+  /@varlet/icon-builder@0.4.0(vue@3.4.29):
+    resolution: {integrity: sha512-z/ry+6ruvRA+vsjKC3S7XcDe8wBBlSPEkPdNmjU6qGTVwcnGb+Da3ENavg0n5vrkA64AJpoigoOk+JcgLkAP3A==}
     hasBin: true
     dependencies:
       '@varlet/axle': 0.7.1(vue@3.4.29)
@@ -4576,7 +4580,7 @@ packages:
   /unconfig@0.3.13:
     resolution: {integrity: sha512-N9Ph5NC4+sqtcOjPfHrRcHekBCadCXWTBzp2VYYbySOHW0PfD9XLCeXshTXjkPYwLrBr9AtSeU0CZmkYECJhng==}
     dependencies:
-      '@antfu/utils': 0.7.8
+      '@antfu/utils': 0.7.10
       defu: 6.1.4
       jiti: 1.21.6
     dev: true

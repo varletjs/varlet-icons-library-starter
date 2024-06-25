@@ -17,6 +17,55 @@ A starter template for building an icon library.
 
 https://varletjs.github.io/varlet-icons-library-starter
 
+### Icons Usage
+
+#### Web font icons
+
+```js
+import '<packageName>/svg-fonts/css/i-icons.css'
+```
+
+```html
+<i class="i i-account-circle-outline"></i>
+<i class="i i-account-circle-outline" style="color: red; font-size: 30px"></i>
+```
+
+#### Vue Component
+
+```html
+<script setup>
+import { XIcon, AccountCircleOutline } from '<packageName>'
+</script>
+
+<template>
+  <x-icon>
+    <account-circle-outline />
+  </x-icon>
+   
+  <x-icon color="red" :size="30">
+    <account-circle-outline />
+  </x-icon>
+</template>
+```
+
+#### React Component
+
+```jsx
+import { XIcon, AccountCircleOutline } from '<packageName>'
+
+function Demo() {
+  return <>
+    <XIcon>
+      <AccountCircleOutline />
+    </XIcon>
+   
+    <XIcon color="red" size={30}>
+      <AccountCircleOutline />
+    </XIcon>
+  </>
+}
+```
+
 ### Core Commands
 
 #### Run icon preview site development
