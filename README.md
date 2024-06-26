@@ -94,7 +94,7 @@ We support getting svg icons from figma documents. The specific implementation s
 
 Create a figma document with the page name Icons and get the file id.
 
-<img src="https://cdn.jsdelivr.net/gh/varletjs/varlet-icons-library-starter/static/figma.png" />
+<img src="https://github.com/varletjs/varlet-icons-library-starter/blob/main/static/figma.png?raw=true" />
 
 #### Step 2
 

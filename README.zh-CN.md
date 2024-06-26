@@ -93,7 +93,7 @@ export default defineConfig({
 
 创建一个 figma 文档，将 svg 图标库的页面名称设置为 `Icons`，并获取到文件 id。
 
-<img src="https://cdn.jsdelivr.net/gh/varletjs/varlet-icons-library-starter/static/figma.png" />
+<img src="https://github.com/varletjs/varlet-icons-library-starter/blob/main/static/figma.png?raw=true" />
 
 #### 步骤二
 
