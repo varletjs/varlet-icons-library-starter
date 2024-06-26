@@ -17,26 +17,6 @@ A starter template for building an icon library.
 
 https://varletjs.github.io/varlet-icons-library-starter
 
-### Framework Support
-
-We support Vue3 and React, and compile components to Vue3 by default.
-If you want to generate React components, refer to the following configuration.
-
-```diff
-// vi.config.ts
-import { defineConfig } from '@varlet/icon-builder'
-
-export default defineConfig({
-  name: 'i-icons',
-  namespace: 'i',
-  fontFamilyClassName: 'i',
-  output: './svg-fonts'
-+ generate: {
-+   framework: 'react'
-+ }  
-})
-```
-
 ### Icons Usage
 
 #### Web font icons
@@ -86,6 +66,54 @@ function Demo() {
 }
 ```
 
+### Framework Support
+
+We support Vue3 and React, and compile components to Vue3 by default.
+If you want to generate React components, refer to the following configuration.
+
+```diff
+// vi.config.ts
+import { defineConfig } from '@varlet/icon-builder'
+
+export default defineConfig({
+  name: 'i-icons',
+  namespace: 'i',
+  fontFamilyClassName: 'i',
+  output: './svg-fonts'
++ generate: {
++   framework: 'react'
++ }  
+})
+```
+
+### Get svg icons from figma documents
+
+We support getting svg icons from figma documents. The specific implementation steps are as follows.
+
+#### Step 1
+
+Create a figma document with the page name Icons and get the file id.
+
+<img src="https://cdn.jsdelivr.net/gh/varletjs/varlet-icons-library-starter/static/figma.png" />
+
+#### Step 2
+
+Get figma access token.
+
+[See here](https://www.figma.com/developers/api#authentication)
+
+#### Step 3
+
+Set token and file id into script.((For the security of token, it is recommended to set the token to the ci environment variable))
+
+```diff
+// package.json
+"scripts": {
+- "icons:figma": "VI_FIGMA_TOKEN=123456 vi figma -f 123456",
++ "icons:figma": "VI_FIGMA_TOKEN=<token> vi figma -f <fileId>",
+}
+```
+
 ### Core Commands
 
 #### Run icon preview site development
@@ -129,6 +157,10 @@ pnpm icons:figma
 ```
 pnpm release
 ```
+
+### Configuration Reference
+
+[See here](https://github.com/varletjs/varlet-iconx/blob/main/packages/varlet-icon-builder/README.md#configuration-type-declaration)
 
 ### Community
 

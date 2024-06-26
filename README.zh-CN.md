@@ -17,25 +17,6 @@
 
 https://varletjs.github.io/varlet-icons-library-starter
 
-### 框架支持
-
-我们支持 Vue3 和 React，默认将组件编译为 Vue3。如果要生成 React 组件，请参考以下配置。
-
-```diff
-// vi.config.ts
-import { defineConfig } from '@varlet/icon-builder'
-
-export default defineConfig({
-  name: 'i-icons',
-  namespace: 'i',
-  fontFamilyClassName: 'i',
-  output: './svg-fonts'
-+ generate: {
-+   framework: 'react'
-+ }  
-})
-```
-
 ### 图标使用
 
 #### 字体图标
@@ -85,6 +66,53 @@ function Demo() {
 }
 ```
 
+### 框架支持
+
+我们支持 Vue3 和 React，默认将组件编译为 Vue3。如果要生成 React 组件，请参考以下配置。
+
+```diff
+// vi.config.ts
+import { defineConfig } from '@varlet/icon-builder'
+
+export default defineConfig({
+  name: 'i-icons',
+  namespace: 'i',
+  fontFamilyClassName: 'i',
+  output: './svg-fonts'
++ generate: {
++   framework: 'react'
++ }  
+})
+```
+
+### 从 figma 文档获取 svg 图标
+
+我们支持从 figma 文档中获取 svg 图标，具体实现步骤如下
+
+#### 步骤一
+
+创建一个 figma 文档，将 svg 图标库的页面名称设置为 `Icons`，并获取到文件 id。
+
+<img src="https://cdn.jsdelivr.net/gh/varletjs/varlet-icons-library-starter/static/figma.png" />
+
+#### 步骤二
+
+获取 figma 文档的访问 token。
+
+[见这里](https://www.figma.com/developers/api#authentication)
+
+#### 步骤三
+
+设置 token 和 file id 到脚本中。(为了 token 的安全性，更推荐将 token 设置到 ci 环境变量中)。
+
+```diff
+// package.json
+"scripts": {
+- "icons:figma": "VI_FIGMA_TOKEN=123456 vi figma -f 123456",
++ "icons:figma": "VI_FIGMA_TOKEN=<token> vi figma -f <fileId>",
+}
+```
+
 ### 核心命令
 
 #### 启动图标预览站点开发环境
@@ -128,6 +156,10 @@ pnpm icons:figma
 ```
 pnpm release
 ```
+
+### 配置相关
+
+[见这里](https://github.com/varletjs/varlet-iconx/blob/main/packages/varlet-icon-builder/README.md#configuration-type-declaration)
 
 ### 反馈和交流
 
