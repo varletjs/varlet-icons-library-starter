@@ -104,7 +104,7 @@ Get figma access token.
 
 #### Step 3
 
-Set token and file id into script.((For the security of token, it is recommended to set the token to the ci environment variable))
+Set token and file id into script.(For the security of token, it is recommended to set the token to the ci environment variable)
 
 ```diff
 // package.json
