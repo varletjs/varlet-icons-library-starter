@@ -1,3 +1,17 @@
+## [0.0.9](https://github.com/varletjs/varlet-icons-library-starter/compare/v0.0.8...v0.0.9) (2024-06-29)
+
+
+### Bug Fixes
+
+* fix config ([0de1767](https://github.com/varletjs/varlet-icons-library-starter/commit/0de17672c4f710f713c72bb8fbd7953f288fbbb8))
+
+
+### Features
+
+* support github link ([ad62f00](https://github.com/varletjs/varlet-icons-library-starter/commit/ad62f00112707409b5cc504ba1ebc1b857b0737e))
+
+
+
 ## [0.0.8](https://github.com/varletjs/varlet-icons-library-starter/compare/v0.0.7...v0.0.8) (2024-06-25)
 
 
