@@ -18,8 +18,8 @@ devDependencies:
     specifier: ^0.61.0
     version: 0.61.0
   '@varlet/icon-builder':
-    specifier: 0.5.0-alpha.1719678306660
-    version: 0.5.0-alpha.1719678306660(vue@3.4.29)
+    specifier: 0.5.0-alpha.1719679970221
+    version: 0.5.0-alpha.1719679970221(vue@3.4.29)
   '@varlet/import-resolver':
     specifier: ^3.3.2
     version: 3.3.2
@@ -1361,8 +1361,8 @@ packages:
       - debug
     dev: true
 
-  /@varlet/icon-builder@0.5.0-alpha.1719678306660(vue@3.4.29):
-    resolution: {integrity: sha512-VLELPKKSE74w/URVeEWZ46rf62Ps38AmE/YiK0RqXxvCp1I2xes70aPFDQ+xWhbxBKf407u7ovGA5fS8hYqIYQ==}
+  /@varlet/icon-builder@0.5.0-alpha.1719679970221(vue@3.4.29):
+    resolution: {integrity: sha512-nxvQVJK5NwaSA0uQ97GQ3M6qLEIX/WdK1BFArY669QFeYC38FUZyPfnuiqgj6fJQB8ViLFd1d/tbKi3MjCIWfA==}
     hasBin: true
     dependencies:
       '@varlet/axle': 0.7.1(vue@3.4.29)
