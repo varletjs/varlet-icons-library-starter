@@ -9,6 +9,7 @@
     "icons",
     "library",
     "starter",
+    "resolver",
     "vue3"
   ],
   "sideEffects": [
@@ -26,6 +27,11 @@
       "require": "./svg-cjs/index.cjs",
       "types": "./svg-types/index.d.ts"
     },
+    "./resolver": {
+      "import": "./resolver/index.js",
+      "require": "./resolver/index.cjs",
+      "types": "./resolver/index.d.ts"
+    },
     "./svg-fonts/fonts/i-icons-webfont.ttf": "./svg-fonts/fonts/i-icons-webfont.ttf",
     "./svg-fonts/css/i-icons.css": "./svg-fonts/css/i-icons.css",
     "./svg-fonts/css/i-icons.less": "./svg-fonts/css/i-icons.less",
@@ -35,7 +41,8 @@
     "svg-cjs",
     "svg-esm",
     "svg-fonts",
-    "svg-types"
+    "svg-types",
+    "resolver"
   ],
   "license": "MIT",
   "scripts": {
@@ -57,19 +64,20 @@
   "bugs": {
     "url": "https://github.com/varletjs/varlet-icons-library-starter/issues"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "unplugin-vue-components": "^0.27.0"
+  },
+  "devDependencies": {
     "@varlet/shared": "^3.3.2",
     "@varlet/touch-emulator": "^3.3.2",
     "@varlet/ui": "^3.3.2",
     "@vueuse/core": "^10.7.2",
-    "vue": "^3.4.29"
-  },
-  "devDependencies": {
+    "vue": "^3.4.29",
     "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "@unocss/preset-rem-to-px": "^0.61.0",
-    "@varlet/icon-builder": "0.4.0",
+    "@varlet/icon-builder": "0.5.0-alpha.1719678306660",
     "@varlet/import-resolver": "^3.3.2",
     "@varlet/preset-unocss": "^3.3.2",
     "@varlet/release": "^0.2.10",

@@ -6,6 +6,7 @@ svg-fonts
 svg-types
 svg-components
 svg-site
+resolver
 auto-imports.d.ts
 components.d.ts
 .DS_Store
