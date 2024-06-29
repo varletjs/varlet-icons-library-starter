@@ -117,6 +117,17 @@ export default defineConfig({
 })
 ```
 
+```diff
+// package.json
+{
+  "peerDependencies": {
+    "unplugin-vue-components": "^0.27.0",
+-   "vue": "^3.4.29",
++   "react": "^18.3.1" 
+  },
+}
+```
+
 ### 从 figma 文档获取 svg 图标
 
 我们支持从 figma 文档中获取 svg 图标，具体实现步骤如下

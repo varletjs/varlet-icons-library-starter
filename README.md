@@ -118,6 +118,17 @@ export default defineConfig({
 })
 ```
 
+```diff
+// package.json
+{
+  "peerDependencies": {
+    "unplugin-vue-components": "^0.27.0",
+-   "vue": "^3.4.29",
++   "react": "^18.3.1" 
+  },
+}
+```
+
 ### Get svg icons from figma documents
 
 We support getting svg icons from figma documents. The specific implementation steps are as follows.
