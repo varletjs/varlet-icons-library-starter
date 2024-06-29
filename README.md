@@ -66,6 +66,38 @@ function Demo() {
 }
 ```
 
+### Automatic import component
+
+When we generate icon components, we will also generate a `resolver` for [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components), which can be used to automatically import icon components.
+Here we take `vite` with `vue component` as an example。
+
+```ts
+// vite.config.ts
+import components from 'unplugin-vue-components/vite'
+import XIconResolver from '<packageName>/resolver'
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  plugins: [
+    components({
+      resolvers: [XIconResolver()]
+    })
+  ]
+})
+```
+
+```html
+<template>
+  <x-icon>
+    <x-account-circle-outline />
+  </x-icon>
+   
+  <x-icon color="red" :size="30">
+    <x-account-circle-outline />
+  </x-icon>
+</template>
+```
+
 ### Framework Support
 
 We support Vue3 and React, and compile components to Vue3 by default.

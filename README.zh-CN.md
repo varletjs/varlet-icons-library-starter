@@ -66,6 +66,38 @@ function Demo() {
 }
 ```
 
+### 自动导入组件
+
+当我们生成图标组件时，我们也会为 [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components) 生成一个 `resolver` 用于自动导入图标组件。
+这里我们以 `vite` 搭配 `vue component` 为例。
+
+```ts
+// vite.config.ts
+import components from 'unplugin-vue-components/vite'
+import XIconResolver from '<packageName>/resolver'
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  plugins: [
+    components({
+      resolvers: [XIconResolver()]
+    })
+  ]
+})
+```
+
+```html
+<template>
+  <x-icon>
+    <x-account-circle-outline />
+  </x-icon>
+   
+  <x-icon color="red" :size="30">
+    <x-account-circle-outline />
+  </x-icon>
+</template>
+```
+
 ### 框架支持
 
 我们支持 Vue3 和 React，默认将组件编译为 Vue3。如果要生成 React 组件，请参考以下配置。
