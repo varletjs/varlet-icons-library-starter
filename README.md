@@ -9,6 +9,7 @@ A starter template for building an icon library.
 
 - 📦 Supports svg transform to vue3, react components and esm, cjs modules
 - 📦 Supports svg conversion to web fonts
+- 📦 Supports icon components automatic import
 - 📦 Supports icon preview site
 - 📦 Supports fetching all svg files from figma design file
 - 📦 Provide release related tools, supports npm, github release and changelog generation
