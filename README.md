@@ -158,6 +158,10 @@ Set token and file id into script.(For the security of token, it is recommended 
 }
 ```
 
+### figma webhook
+
+If you want to automatically build the icon library when the designer updates the figma icon library, you can mount figma's webhook, which can fully open up the automated workflow of designers and front-end developers. For more information, see [figma webhook](https://www.figma.com/developers/api#webhooks_v2).
+
 ### Core Commands
 
 #### Run icon preview site development

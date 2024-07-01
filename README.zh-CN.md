@@ -157,6 +157,10 @@ export default defineConfig({
 }
 ```
 
+### figma webhook
+
+如果你希望设计师更新 figma 图标库的时候自动执行图标库的构建，可以接入 figma 的 webhook，这样可以完全打通设计师和前端开发工程师的自动化工作流。 详情见 [figma webhook](https://www.figma.com/developers/api#webhooks_v2)。
+
 ### 核心命令
 
 #### 启动图标预览站点开发环境
