@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useDark } from './use'
-import { bigCamelize } from '@varlet/shared'
+import { pascalCase } from 'rattail'
 import { useClipboard, useDebounceFn } from '@vueuse/core'
 
 const modules = import.meta.glob<{ default: string }>('../svg/*.svg', {
@@ -9,7 +9,7 @@ const modules = import.meta.glob<{ default: string }>('../svg/*.svg', {
 })
 
 const icons = Object.entries(modules).map(([key, value]) => ({
-  name: bigCamelize(key.slice(key.lastIndexOf('/') + 1).replace('.svg', '')),
+  name: pascalCase(key.slice(key.lastIndexOf('/') + 1).replace('.svg', '')),
   icon: value.default
 }))
 
