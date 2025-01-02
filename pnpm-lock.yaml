@@ -21,8 +21,8 @@ importers:
         specifier: ^0.61.0
         version: 0.61.0
       '@varlet/icon-builder':
-        specifier: 0.5.2
-        version: 0.5.2(vue@3.4.29(typescript@5.7.2))
+        specifier: 0.6.0
+        version: 0.6.0(vue@3.4.29(typescript@5.7.2))
       '@varlet/import-resolver':
         specifier: ^3.8.2
         version: 3.8.2
@@ -920,8 +920,8 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
-  '@varlet/icon-builder@0.5.2':
-    resolution: {integrity: sha512-R8wUyJ4JfvykBRQteygOhz658NvY3Et0e3vnEGipJHChtpW6/Q0Fnjfy2EnDO5SgyYXOYJf1Yv73+Sm0noNKkA==}
+  '@varlet/icon-builder@0.6.0':
+    resolution: {integrity: sha512-OyD8FJzkQSaMc9GownrwRHP8RieTEBuYKZsv8m8HwRvEGWleQ9pHTwnHeXdtUSV4wuOz34WniXkJMdOcSPqoGg==}
     hasBin: true
 
   '@varlet/icons@3.8.2':
@@ -3773,7 +3773,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@varlet/icon-builder@0.5.2(vue@3.4.29(typescript@5.7.2))':
+  '@varlet/icon-builder@0.6.0(vue@3.4.29(typescript@5.7.2))':
     dependencies:
       '@varlet/axle': 0.9.5(vue@3.4.29(typescript@5.7.2))
       '@varlet/webfont': 0.0.9
