@@ -1,17 +1,32 @@
 {
   "name": "@varlet/icons-library-starter",
   "version": "0.0.9",
-  "type": "module",
-  "author": "haoziqaq <357229046@qq.com>",
   "description": "A icons library starter",
   "keywords": [
-    "svg",
     "icons",
     "library",
-    "starter",
     "resolver",
+    "starter",
+    "svg",
     "vue3"
   ],
+  "bugs": {
+    "url": "https://github.com/varletjs/varlet-icons-library-starter/issues"
+  },
+  "license": "MIT",
+  "author": "haoziqaq <357229046@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varletjs/varlet-icons-library-starter.git"
+  },
+  "files": [
+    "svg-cjs",
+    "svg-esm",
+    "svg-fonts",
+    "svg-types",
+    "resolver"
+  ],
+  "type": "module",
   "sideEffects": [
     "svg-fonts/css/*.css",
     "svg-fonts/css/*.less",
@@ -23,79 +38,63 @@
   "types": "svg-types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./svg-types/index.d.ts",
       "import": "./svg-esm/index.js",
-      "require": "./svg-cjs/index.cjs",
-      "types": "./svg-types/index.d.ts"
+      "require": "./svg-cjs/index.cjs"
     },
     "./resolver": {
+      "types": "./resolver/index.d.ts",
       "import": "./resolver/index.js",
-      "require": "./resolver/index.cjs",
-      "types": "./resolver/index.d.ts"
+      "require": "./resolver/index.cjs"
     },
     "./svg-fonts/fonts/i-icons-webfont.ttf": "./svg-fonts/fonts/i-icons-webfont.ttf",
     "./svg-fonts/css/i-icons.css": "./svg-fonts/css/i-icons.css",
     "./svg-fonts/css/i-icons.less": "./svg-fonts/css/i-icons.less",
     "./svg-fonts/css/i-icons.scss": "./svg-fonts/css/i-icons.scss"
   },
-  "files": [
-    "svg-cjs",
-    "svg-esm",
-    "svg-fonts",
-    "svg-types",
-    "resolver"
-  ],
-  "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview",
     "icons": "pnpm icons:build && pnpm icons:generate",
     "icons:build": "vi build",
     "icons:generate": "vi generate",
     "icons:figma": "VI_FIGMA_TOKEN=123456 vi figma -f 123456",
     "release": "pnpm icons && vr release",
-    "format": "prettier --write .",
-    "bump": "pnpm update @varlet/* rattail --latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/varletjs/varlet-icons-library-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/varletjs/varlet-icons-library-starter/issues"
-  },
-  "peerDependencies": {
-    "unplugin-vue-components": "^0.27.0",
-    "vue": "^3.4.29"
+    "lint": "vp lint --fix",
+    "format": "vp fmt",
+    "prepare": "vp config --hooks-dir .vite-hooks"
   },
   "devDependencies": {
-    "@types/node": "^20.2.5",
-    "@typescript-eslint/eslint-plugin": "^5.59.8",
-    "@typescript-eslint/parser": "^5.59.8",
-    "@unocss/preset-rem-to-px": "^0.61.0",
+    "@types/node": "^25.6.0",
+    "@unocss/preset-rem-to-px": "^66.6.8",
     "@varlet/icon-builder": "0.6.0",
-    "@varlet/import-resolver": "^3.8.2",
-    "@varlet/preset-unocss": "^3.8.2",
-    "@varlet/release": "^0.3.2",
-    "@varlet/touch-emulator": "^3.8.2",
-    "@varlet/ui": "^3.8.2",
-    "@vitejs/plugin-vue": "^5.0.5",
+    "@varlet/import-resolver": "^3.14.2",
+    "@varlet/preset-unocss": "^3.14.2",
+    "@varlet/release": "^1.2.0",
+    "@varlet/touch-emulator": "^3.14.2",
+    "@varlet/ui": "^3.14.2",
+    "@vitejs/plugin-vue": "^6.0.5",
     "@vueuse/core": "^10.7.2",
-    "eslint": "^8.41.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.14.1",
-    "prettier": "^3.3.2",
-    "rattail": "^1.0.18",
-    "unocss": "^0.61.0",
-    "unplugin-auto-import": "^0.17.6",
-    "unplugin-vue-components": "^0.27.0",
-    "vite": "^5.3.1",
+    "rattail": "^1.8.3",
+    "unocss": "^66.6.8",
+    "unplugin-auto-import": "^21.0.0",
+    "unplugin-vue-components": "^32.0.0",
+    "vite": "$vite",
+    "vite-plus": "0.1.16",
+    "vue": "^3.5.32"
+  },
+  "peerDependencies": {
+    "unplugin-vue-components": "^32.0.0",
     "vue": "^3.4.29"
   },
-  "packageManager": "pnpm@9.1.1",
   "engines": {
-    "pnpm": ">=9.0"
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@0.1.16"
+    }
   }
 }

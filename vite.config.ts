@@ -1,22 +1,23 @@
+import { fileURLToPath, URL } from 'node:url'
+import { lint, fmt, staged } from '@configurajs/vite-plus'
+import { VarletImportResolver } from '@varlet/import-resolver'
 import vue from '@vitejs/plugin-vue'
+import unoCSS from 'unocss/vite'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
-import unoCSS from 'unocss/vite'
-import { fileURLToPath, URL } from 'node:url'
-import { VarletImportResolver } from '@varlet/import-resolver'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
   base: './',
 
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
   },
 
   build: {
-    outDir: 'svg-site'
+    outDir: 'svg-site',
   },
 
   plugins: [
@@ -29,9 +30,9 @@ export default defineConfig({
           'var-image': ['src'],
           'var-avatar': ['src'],
           'var-card': ['src'],
-          'var-app-bar': ['image']
-        }
-      }
+          'var-app-bar': ['image'],
+        },
+      },
     }),
 
     components({
@@ -42,10 +43,15 @@ export default defineConfig({
     autoImport({
       imports: ['vue'],
       resolvers: [VarletImportResolver({ autoImport: true })],
-      eslintrc: { enabled: true },
-      dts: true
+      dts: true,
     }),
 
-    unoCSS()
-  ]
+    unoCSS(),
+  ],
+
+  staged: staged(),
+
+  lint: lint(),
+
+  fmt: fmt(),
 })

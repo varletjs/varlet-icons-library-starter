@@ -1,5 +1,5 @@
 node_modules
-.vscode
+.vite-hooks
 svg-cjs
 svg-esm
 svg-fonts
